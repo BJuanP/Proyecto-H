@@ -9,7 +9,6 @@ body {
     
     font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 20px;
 
     background-color: #e0f7fa;
     background-image: url('Fondo.jpg');
@@ -18,30 +17,50 @@ body {
     background-repeat: no-repeat;
 }
 
+
 h1 {
     font-size: 3em;
-    margin-bottom: 10px;
+    margin-bottom: 70px;
+    color: #4a148c;
 }
 
 table {
     width: 80%;
-    margin: auto;
     border-collapse: collapse;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.85);
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 
 th, td {
-    border: 1px solid #d1c4e9;
+    border: 2px solid rgba(88, 214, 141, 0.6);
     padding: 10px;
     font-size: 1.1em;
 }
 
 th {
-    background-color: #e1bee7;
-    color: #4a148c;
+    background-color: rgba(91, 44, 111, 0.85) ; /* violeta oscuro */
+    color: rgb(240, 243, 244);        /* texto blanco */
 }
 
 td {
+    color: rgb(23, 32, 42);
+    font-weight: 550;
     height: 50px;
+}
+
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    table {
+        width: 95%;
+        font-size: 0.9em;
+    }
+
+    th, td {
+        padding: 8px;
+    }
 }
